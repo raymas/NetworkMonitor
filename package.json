@@ -1,0 +1,32 @@
+{
+  "name": "networkmonitor",
+  "version": "0.0.1",
+  "description": "NPM packet monitor and drawer",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "cd node_modules/geoip-lite && npm run-script updatedb",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raymas/NetworkMonitor.git"
+  },
+  "keywords": [
+    "node",
+    "packet",
+    "capture",
+    "html",
+    "webserver"
+  ],
+  "author": "raymas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/raymas/NetworkMonitor/issues"
+  },
+  "homepage": "https://github.com/raymas/NetworkMonitor#readme",
+  "dependencies": {
+    "geoip-lite": "^1.3.7",
+    "pcap": "^2.1.0"
+  }
+}
